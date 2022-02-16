@@ -1,139 +1,375 @@
-.header{width: 100%;
-position: absolute;}
-
-.headercontainer{display: flex;
-position: relative;
-    justify-content: space-between;}
-    
-.headernavham{cursor: pointer;
-display: block;
-position: relative;
-width: 30px;
-height: 20px;
-z-index: 100;}
-
-.headernavhamline:first-child{top: 0;}
-
-.headernavhamline:last-child{top: 100%;}
-
-.headernavhamline{position: absolute;
-display: block;
-background-color: black;
-top: 50%;
-transform: translate(0,-50%);
-border-radius: 10px;}
-
-.headernavlist{ display: flex;
-justify-content: space-between;
-
+body {
+    color: #000;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-ul{list-style: none;}
-.headernavlistitem{margin-right: 20px;
-    
+body {
+    -webkit-font-smoothing: antialiased;
 }
 
-a {text-decoration: none;
-color: black;}
-
-.headernavlistitemlink{display: block;
-text-align: center;
-    
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
 }
 
-
-
-.headernavlistitembutton {background-color: orange;
-border-radius: 38px;
-    
+.Header {
+    width: 100%;
+    position: absolute;
 }
-.headernavlistitembutton:hover {opacity: 0.8;}
 
-.headerlogoimg{width: 100%;}
+.Header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
 
-.headercontainer{padding-left: 40px;
-padding-right: 40px;
-margin-left: 40px;
-margin-right: 40px;
-    position: relative;}
-    
-.katamari{margin-bottom: 70px;
-width: fit-content;
+header {
+    display: block;
+}
+
+.HeaderContainer {
     display: flex;
-}
-
-.five{text-align: center;}
-
-.threeimages{text-align: center;
-    margin-bottom: 25px;
+    justify-content: space-between;
+    margin: 0 36px 0 36px;
+    max-width: 100%;
     position: relative;
 }
 
-.firstbutten{display: flex;
-    margin-bottom: 40px;
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.HeaderLogo {
+    transition: opacity 0.2s;
+}
+
+.HeaderLogo__image--pc {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.HeaderLogo__image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
+}
+
+.HeaderNavHamburger {
+    display: none;
+}
+
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
+}
+
+.HeaderNavList {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+@media screen and (min-width: 768px)
+{.HeaderNavListItem {
+    transition: opacity 0.2s;
+}}
+
+.HeaderNavListItem {
+    margin-right: 45px;
+}
+
+.HeaderNavListItem__link {
+    display: block;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.HeaderNavListItem__link>span:first-child {
+    font-family: 'Lato', sans-serif;
+}
+
+.HeaderNavListItem__link>span {
+    display: block;
+    font-weight: 700;
     text-align: center;
 }
 
-.firstbutten1{background-color: orange;
-border-radius: 38px;
+.HeaderNavListItem__link>span:last-child {
+    font-size: 10px;
+}
+
+.HeaderNavListItem__link>span {
+    display: block;
+    font-weight: 700;
     text-align: center;
-    justify-content: center;
+}
+
+.HeaderNavListItem:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 768px)
+{.HeaderNavListItem {
+    transition: opacity 0.2s;
+}}
+
+@media screen and (min-width: 768px)
+{.HeaderNavListItem__button {
+    transition: opacity 0.2s;
+}}
+
+.HeaderNavListItem__button {
+    align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
     display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    display: block;
+}
+
+.FirstView {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+.FirstView__main-image--sp {
+    display: none;
+}
+
+.FirstView__main-image {
+    width: 100%;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.FirstView__container {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.FirstViewContent {
+    margin-bottom: 70px;
+    width: fit-content;
+}
+
+.FirstViewContent__title {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.FirstViewContent__images {
+    margin-bottom: 25px;
+}
+
+.FirstViewContent__images img {
+    margin-right: 8px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.FirstViewContent__images img:nth-of-type(2) {
+    width: 40%;
+}
+
+.FirstViewContent__images img:last-of-type {
+    margin-right: 0;
+}
+
+.FirstViewContent__buttons {
+    display: flex;
+}
+
+.FirstViewContent__buttons a:first-of-type {
+    margin-right: 15px;
+    width: 306px;
+}
+
+@media screen and (min-width: 768px)
+{.FirstViewContent__buttons a {
+    transition: opacity 0.2s;
+}}
+
+.FirstViewContent__buttons a {
+    align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.FirstViewContent__buttons a:last-of-type {
+    background-color: #fff;
+    color: #000;
+    width: 176px;
+}
+
+@media screen and (min-width: 768px)
+{.FirstViewContent__buttons a {
+    transition: opacity 0.2s;
+}}
+
+.FirstViewCaption {
+    color: #A2A2A4;
+    font-size: 12px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.AboutWrapper {
+    padding: 110px 0;
+    background-color: #F79214;
+}
+
+.About {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.About__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.About__title h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.About__title h2, .About__title p {
+    color: #fff;
+    text-align: left;
+}
+
+.About__title h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 74px;
+}
+
+.About__title h2>span {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.About__title p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.About__title h2, .About__title p {
+    color: #fff;
+    text-align: left;
+}
+
+.About__button {
     width: 250px;
 }
-.firstbutten1:hover {opacity: 0.8;}
-.firstbutten2{background-color: white;
-border-radius: 38px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    width: 200px;
-}
 
-.about{background-color: orange;
-    color:white;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 150px;
-}
+@media screen and (min-width: 768px)
+{About__button a {
+    transition: opacity 0.2s;
+}}
 
-.first{width: fit-content;
-
-}
-
-.firstcon{position: absolute;
-top: 30%;
-left: 15%;
-margin-bottom: 5px;}
-
-.threeimages{position: absolute;
-top: 50%;
-left: 5%;
-margin-bottom: 5px;}
-
-.firstbutten{position: absolute;
-top: 90%;
-left: 5%;
-margin-bottom: 5px;}
-
-.aboutbotten{position: absolute;
-top: 100%;
-right: 5%;
-    background-color: white;
+.About__button a {
+    align-items: center;
+    background-color: #F79214;
+    border: none;
     border-radius: 38px;
-    width: 150px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
     text-align: center;
-}
-
-.about1{margin-bottom: 20px;
-margin-top: 20px;
-    position: absolute;
-top: 70%;
-    background-color: orange;
     width: 100%;
 }
 
-.onetwothree{position: absolute;
-top: 70%;}
+.About__button a span:first-child {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.About__button a span:last-child {
+    font-size: 12px;
+    line-height: 18px;
+}
 
